@@ -77,8 +77,13 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
-1. 
+1. Observer design patterns didefinisikan saat terdapat observer yang menerima notification setiap ada perubahan state dengan pemanggilan method-nya. Untuk menjawab apakah dibutuhkan interface atau trait tergantung pada requirements. Jika subscribers memiliki sifat yang berbeda, maka mendefinisikan trait akan berguna karena menyediakan implementasi yang banyak dari subscriber interface.
+
+2. DashMap diperlukan karena pada dasarnya DashMap dapat memberi syarat id atau url unik. Selain itu, dapat memeriksa adanya key atau url pada DashMap dengan mudah sehingga memastikan tidak ada yang duplikat.
+
+3. Singleton pattern digunakan untuk memastikan sebuah class hanya memiliki satu instance dan memberikan global point access pada instance tersebut. Maka jika ingin mengaplikasikannya, harus menambahkan mekanisme sinkronisasi agar concurrent access pada SUBSCRIBERS dapat tetap dilakukan dengan aman. Sedangkan, DashMap didesain untuk menyediakan thread-safe concurrent access, sehingga lebih cocok menggunakan DashMap.
 
 #### Reflection Publisher-2
+
 
 #### Reflection Publisher-3
