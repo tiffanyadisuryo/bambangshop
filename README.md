@@ -84,6 +84,10 @@ This is the place for you to write reflections:
 3. Singleton pattern digunakan untuk memastikan sebuah class hanya memiliki satu instance dan memberikan global point access pada instance tersebut. Maka jika ingin mengaplikasikannya, harus menambahkan mekanisme sinkronisasi agar concurrent access pada SUBSCRIBERS dapat tetap dilakukan dengan aman. Sedangkan, DashMap didesain untuk menyediakan thread-safe concurrent access, sehingga lebih cocok menggunakan DashMap.
 
 #### Reflection Publisher-2
+1. Service perlu dipisah agar dapat memenuhi sifat single responsibility principle, mempromosikan modularitas, memudahkan testing, mendukung fleksibilitas dan skalabilitas, mengkapsulasi logika akses data, dan meningkatkan kejelasan dan pemeliharaan kode secara keseluruhan.
 
+2. Jika hanya menggunakan Model tanpa melakukan separasi menjadi service maupun repository, maka kompleksitas kode nya akan naik, yang menyebabkan penurunan maintainability, dan hubungan antar model akan sangat terikat sehingga bila ada perubahan di salah satu model, maka akan memengaruhi model lainnya dan butuh diubah juga.
+
+3. Menurut saya, Postman sangat berguna dan mempermudah dalam melihat kebenaran kode kita. Saat terdapat sebuah request dapat dilihat response yang dikembalikan dan data yang diambil benar atau salah.
 
 #### Reflection Publisher-3
