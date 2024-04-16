@@ -91,3 +91,8 @@ This is the place for you to write reflections:
 3. Menurut saya, Postman sangat berguna dan mempermudah dalam melihat kebenaran kode kita. Saat terdapat sebuah request dapat dilihat response yang dikembalikan dan data yang diambil benar atau salah.
 
 #### Reflection Publisher-3
+1. Variasi yang digunakan adalah push model, ini dikarenakan pada function create, delete, dan publish, subscriber dari product_type menerima notifikasi.
+
+2. Jika menggunakan variasi pull, observer lebih memiliki kebebasan dan keamanan terhadap data tanpa andil publisher. Namun, butuh banyak effort dan pemahaman untuk melakukan hal tersebut.
+
+3. Tanpa multi-threading, maka notifikasi akan dikirim bergantian secara sinkronus tentunya jadi sangat lambat.
